@@ -1,0 +1,80 @@
+FoundingTeams.ai is an AI accelerator and talent platform. We help AI founders to build and market their startup with talent who work for equity. We also help startup founders to raise money via our Demo Day infront of investors.
+
+
+Job Overview:
+
+
+
+We are seeking a motivated and detail-oriented Junior Machine Learning Engineer to join our data science and engineering team. In this role, you will assist in building, deploying, and maintaining ML models to solve real-world problems. You’ll work closely with data scientists, software engineers, and product managers to develop intelligent systems using machine learning algorithms.
+
+
+Key Responsibilities:
+
+
+
+Assist in collecting, cleaning, and preprocessing data for model training.
+Support the development and evaluation of supervised and unsupervised ML models.
+Implement baseline models and contribute to improving performance.
+Collaborate on feature engineering and model optimization tasks.
+Write clean, maintainable, and documented code in Python or related languages.
+Contribute to deployment pipelines and monitor model performance in production.
+Stay updated with the latest trends and tools in ML/AI.
+
+
+Tools & Technologies:
+
+
+
+Programming & Data Handling:
+
+
+
+Python (required)
+NumPy, Pandas (for data manipulation)
+Scikit-learn (classic ML algorithms)
+Jupyter Notebooks
+
+
+Deep Learning (optional/bonus):
+
+
+
+TensorFlow or PyTorch
+Keras
+
+
+Data Engineering Basics:
+
+
+
+SQL (basic querying)
+Familiarity with APIs for data ingestion
+Experience with CSV/JSON/Parquet file formats
+
+
+Version Control & Collaboration:
+
+
+
+Git & GitHub
+Jira or similar project tracking tools
+Agile/Scrum familiarity
+
+
+Deployment & MLOps (Nice to Have):
+
+
+
+Docker (basic knowledge)
+MLflow or Weights & Biases
+Familiarity with cloud platforms (AWS/GCP/Azure)
+
+
+Qualifications:
+
+
+
+Bachelor’s degree in Computer Science, Data Science, Statistics, Engineering, or related field.
+Coursework or internship experience in machine learning or data science.
+Strong problem-solving skills and eagerness to learn.
+Good communication and teamwork abilities.
