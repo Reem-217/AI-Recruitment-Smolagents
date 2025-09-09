@@ -1,14 +1,11 @@
 from agent import GeminiRecruitmentAgent
+from config.config import CV_PATH, JOB_DESC_PATH
 
 def main():
-    cv_path = "Reem_CV.pdf"
-    job_desc_path = "Job_Description.txt"
-    csv_file = "candidates.csv"
-
     agent = GeminiRecruitmentAgent()
-    result = agent.evaluate_candidate(cv_path, job_desc_path)
+    result = agent.evaluate_candidate(CV_PATH, JOB_DESC_PATH)
 
-    print("\n===== Recruitment Result =====\n")
+    print("\n===== Recruitment Result \n")
     print(result)
     print("\n==============================\n")
 
