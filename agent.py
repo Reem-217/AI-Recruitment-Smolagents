@@ -26,6 +26,9 @@ class GeminiRecruitmentAgent(CodeAgent):
         with open(job_desc_path, "r", encoding="utf-8") as f:
             job_description_content = f.read()
         
+        # skills list
+        skills = ["RAG", "Automation", "NLP", "Web Scraping"]
+
         prompt = f"""
         You are a smart AI recruitment assistant. You have access to these tools:
         - PdfTool(): extracts all text from a PDF file
@@ -34,33 +37,31 @@ class GeminiRecruitmentAgent(CodeAgent):
 
         Task:
         Analyze the candidate's CV and the job description carefully by:
-        -Read the cv {cv_path}.
-        -Extract the name, email, phone number.
-        -Read the job description {job_description_content}.
-        -Extract strengths , score, and result and focus on matching:
+        - Read the CV {cv_path}.
+        - Extract the name, email, and phone number.
+        - Read the job description {job_description_content}.
+        - Check how well the candidate matches the required skills.
 
-            1. Required skills (technical & soft skills)
-            2. Relevant experience (years, projects, roles)
-            3. Education or certifications relevant to the job
-            4. Achievements or measurable results
+        Required skills: {skills}
 
-        Provide a structured JSON:
+        Provide a structured JSON in this format ONLY:
 
         {{
-        "strengths": [
-            "Explain why each strength proves the candidate is suitable for the job",
-            "The candidate MUST be in the same job field"
-            "Skill X matches requirement Y",
-            "Experience Z in role W is relevant
-        ],
-        "Score": from 1 to 10 based on how strongly and highly the candidate strengths mathces the job reuirements 
-        "result":if score>=6 "PASS"  else "FAIL"
+        "skills_scores": {{
+            "RAG": {{"exists": true/false, "score": 0-5}},
+            "Automation": {{"exists": true/false, "score": 0-5}},
+            "NLP": {{"exists": true/false, "score": 0-5}},
+            "Web Scraping": {{"exists": true/false, "score": 0-5}}
+        }},
+        "total_score": sum of all scores,
+        "result": "PASS" if total_score >= {len(skills)*2} else "FAIL"
         }}
 
-        Return **only JSON output**.
-        -And Finally write the candidate info and screening to the csv file {csv_file}
+        - If a skill does not exist in the CV, set "exists": false and "score": 0.
+        - If a skill exists, set "exists": true and assign a score between 1 and 5 based on strength.
+        - Do not output reasoning or text outside JSON.
+        - Finally, write the candidate info and screening to the CSV file {csv_file}.
         """
-
 
         result = self.run(prompt)
         return result

@@ -1,7 +1,7 @@
 from agent import GeminiRecruitmentAgent
 
 def main():
-    cv_path = "Reem_CV.pdf"
+    cv_path = "Aya_CV.pdf"
     job_desc_path = "Job_Description.txt"
     csv_file = "candidates.csv"
 
