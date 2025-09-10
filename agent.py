@@ -25,7 +25,6 @@ class GeminiRecruitmentAgent(CodeAgent):
         with open(job_desc_path, "r", encoding="utf-8") as f:
             job_description_content = f.read()
 
-        # ديناميكي: يبني الفورمات على حسب SKILLS
         skills_json = ",\n".join([
             f'"{skill}": {{"exists": true/false, "score": 0-5}}'
             for skill in SKILLS
