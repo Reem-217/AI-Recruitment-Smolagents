@@ -1,3 +1,11 @@
-Timestamp,Name,Email,Phone,RAG,RAG Score,Automation,Automation Score,NLP,NLP Score,Web Scraping,Web Scraping Score,Total Score,Result
-10/09/2025 18:47,Reem Refaat Hassaan,-reem.ref3aat7890@gmail.com,+201099425132 -,TRUE,5,TRUE,5,TRUE,4,TRUE,3,17,PASS
-10/09/2025 18:54,Aya Refaat Hassaan,ayarefaat491@gmail.com,2.01069E+11,FALSE,0,FALSE,0,FALSE,0,FALSE,0,0,FAIL
+Timestamp,Name,Email,Phone,Pharmacy degree,Pharmacy degree Score,Licensed pharmacist,Licensed pharmacist Score,Medical expertise,Medical expertise Score,English fluency,English fluency Score,Leadership,Leadership Score,Analytical skills,Analytical skills Score,Total Score,Result
+2025-09-10 21:46:36,Contact Ahmed Hamdy,zouci50@gmail.com,01015366404 (,False,0,False,0,True,4,True,5,True,4,True,5,18,PASS
+2025-09-10 21:47:28,AHMED GAMAL MOHAMED FARID,drahmedbusinessworld@gmail.com,00201012081697 ,True,5,True,3,True,4,False,0,True,3,True,4,19,PASS
+2025-09-10 21:48:17,Ahmed Salama,ahmd_salama@live.com,"+2-01005309424
+",False,0,False,0,False,0,True,3,True,4,True,4,11,FAIL
+2025-09-10 21:49:23,Alaa Samir A. Elmasry,alaaelmasry1997@gmail.com,+201000094893 ,True,3,True,3,True,5,True,5,True,4,True,4,24,PASS
+2025-09-10 21:50:30,Allaa Elsayed,allaazidane9@gmail.com,0120-195-7924 ,True,5,True,4,True,4,True,5,True,4,True,3,25,PASS
+2025-09-10 21:51:20,Amal Abdalla Salman Ahmed,molaa79@yahoo.com,"0960087524, 0912252404",False,0,True,4,True,5,True,4,True,5,True,4,22,PASS
+2025-09-10 21:52:44,Amr Sarhan,drasarhan2000@gmail.com,+201001121121(,True,5,False,0,True,4,True,5,True,5,True,4,23,PASS
+2025-09-10 21:53:26,Angie Karam Labib,Angie.karamlabib@gmail.com,"01092908086
+",True,5,True,4,True,4,True,5,True,4,False,0,22,PASS

@@ -1,13 +1,13 @@
 import csv
 from datetime import datetime
-from config.config import CSV_FILE
+from config.config import CSV_FILE,SKILLS
 
-skills = ["RAG", "Automation", "NLP", "Web Scraping"]
+
 
 def save_to_csv(candidate, screening):
     # بناء الهيدر: لكل skill عمودين (exists + score)
     header = ["Timestamp", "Name", "Email", "Phone"]
-    for skill in skills:
+    for skill in SKILLS:
         header.append(skill)          # البوليان
         header.append(f"{skill} Score")  # السكور
     header.extend(["Total Score", "Result"])
@@ -28,7 +28,7 @@ def save_to_csv(candidate, screening):
     ]
 
     # نضيف كل skill (exists + score)
-    for skill in skills:
+    for skill in SKILLS:
         skill_data = screening["skills_scores"].get(skill, {"exists": False, "score": 0})
         row.append(skill_data["exists"])
         row.append(skill_data["score"])

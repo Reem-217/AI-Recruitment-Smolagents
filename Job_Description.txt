@@ -1,80 +1,38 @@
-FoundingTeams.ai is an AI accelerator and talent platform. We help AI founders to build and market their startup with talent who work for equity. We also help startup founders to raise money via our Demo Day infront of investors.
-
-
-Job Overview:
-
-
-
-We are seeking a motivated and detail-oriented Junior Machine Learning Engineer to join our data science and engineering team. In this role, you will assist in building, deploying, and maintaining ML models to solve real-world problems. You’ll work closely with data scientists, software engineers, and product managers to develop intelligent systems using machine learning algorithms.
-
-
-Key Responsibilities:
-
-
-
-Assist in collecting, cleaning, and preprocessing data for model training.
-Support the development and evaluation of supervised and unsupervised ML models.
-Implement baseline models and contribute to improving performance.
-Collaborate on feature engineering and model optimization tasks.
-Write clean, maintainable, and documented code in Python or related languages.
-Contribute to deployment pipelines and monitor model performance in production.
-Stay updated with the latest trends and tools in ML/AI.
-
-
-Tools & Technologies:
-
-
-
-Programming & Data Handling:
-
-
-
-Python (required)
-NumPy, Pandas (for data manipulation)
-Scikit-learn (classic ML algorithms)
-Jupyter Notebooks
-
-
-Deep Learning (optional/bonus):
-
-
-
-TensorFlow or PyTorch
-Keras
-
-
-Data Engineering Basics:
-
-
-
-SQL (basic querying)
-Familiarity with APIs for data ingestion
-Experience with CSV/JSON/Parquet file formats
-
-
-Version Control & Collaboration:
-
-
-
-Git & GitHub
-Jira or similar project tracking tools
-Agile/Scrum familiarity
-
-
-Deployment & MLOps (Nice to Have):
-
-
-
-Docker (basic knowledge)
-MLflow or Weights & Biases
-Familiarity with cloud platforms (AWS/GCP/Azure)
-
-
-Qualifications:
-
-
-
-Bachelor’s degree in Computer Science, Data Science, Statistics, Engineering, or related field.
-Coursework or internship experience in machine learning or data science.
-Strong problem-solving skills and eagerness to learn.
-Good communication and teamwork abilities.
+Job Title: Medical Sales Specialist
+Location: Remotely
+Company Overview
+IXIR PLUS is a leading provider of Herbal Supplements, dedicated to improving the health and well-being of our customers. We are committed to providing high-quality products and exceptional customer service.
+Job Description
+We are seeking a dynamic and skilled Medical Sales Specialist to join our team. The ideal candidate will have a strong background in both medical expertise and sales, with the ability to handle a high volume of patient interactions while maintaining professional and sensitive relationships.
+Job Responsibilities
+Provide medical consultation and support to patients, addressing their needs with empathy and professionalism.
+Utilize strong sales techniques to understand patient concerns, highlight product benefits, handle objections, and close sales.
+Build and maintain solid relationships with patients and healthcare professionals, ensuring trust and satisfaction.
+Maintain a high standard of work quality, demonstrating a genuine willingness to assist patients.
+Continuously evaluate and improve the quality of relationships built, ensuring long-term patient engagement and loyalty.
+Lead and mentor a team of sales professionals, fostering a collaborative and high-performing environment.
+Manage the sales cycle through CRM tools, ensuring accurate reporting and follow-ups.
+Adapt to different patients' needs and situations quickly, demonstrating flexibility in approach.
+Analyze sales data and patient feedback to identify trends and areas for improvement.
+Commit to ongoing learning and professional development, staying updated with the latest medical advancements and market trends.
+Experiment with A-B testing, MVP tests, and cohort testing to drive innovation and improvement.
+Maintain strong negotiation skills to enhance negotiation positions while keeping customers extremely satisfied.
+Skills and Qualifications
+Bachelor's degree in pharmacy
+Licensed pharmacist or doctor with relevant medical expertise.
+Proven sales experience with strong listening, objection handling, and persuasion skills.
+Excellent interpersonal skills, with the ability to build sensitive and trusting relationships.
+Fluency in English, both written and spoken.
+Proficiency with CRM tools and strong technological aptitude.
+Strong negotiation skills and ability to highlight and sell opportunities.
+Charming and respectful voice, with the ability to engage and influence customers effectively.
+Strong mental resilience to handle the challenges and pressures of the role.
+Compensation & Benefits
+Monthly salary: 10,000 EGP.
+Commission: 2% of total sales.
+Opportunities for training and professional development.
+Motivating and supportive work environment
+Weekly Vacation policy:
+Saturday and Sunday off  according to Dubai holiday
+How to Apply
+Please submit your resume and cover letter detailing your relevant experience and why you are the ideal candidate for this position to hr@ixir.plus.

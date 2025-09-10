@@ -2,7 +2,7 @@ from smolagents import CodeAgent, OpenAIServerModel
 from tools import PdfTool, CandidateInfoTool, CsvSaveTool
 from utils.csv_utils import save_to_csv
 from utils.data_utils import extract_candidate_info
-from config.config import CSV_FILE,API_KEY, MODEL_NAME
+from config.config import CSV_FILE, API_KEY, MODEL_NAME, SKILLS
 
 class GeminiRecruitmentAgent(CodeAgent):
     def __init__(self):
@@ -19,15 +19,17 @@ class GeminiRecruitmentAgent(CodeAgent):
             api_key=API_KEY
         )
 
-        
         super().__init__(tools=tools, model=model, add_base_tools=True)
 
     def evaluate_candidate(self, cv_path, job_desc_path, csv_file=CSV_FILE):
         with open(job_desc_path, "r", encoding="utf-8") as f:
             job_description_content = f.read()
-        
-        # skills list
-        skills = ["RAG", "Automation", "NLP", "Web Scraping"]
+
+        # ديناميكي: يبني الفورمات على حسب SKILLS
+        skills_json = ",\n".join([
+            f'"{skill}": {{"exists": true/false, "score": 0-5}}'
+            for skill in SKILLS
+        ])
 
         prompt = f"""
         You are a smart AI recruitment assistant. You have access to these tools:
@@ -42,19 +44,16 @@ class GeminiRecruitmentAgent(CodeAgent):
         - Read the job description {job_description_content}.
         - Check how well the candidate matches the required skills.
 
-        Required skills: {skills}
+        Required skills: {SKILLS}
 
         Provide a structured JSON in this format ONLY:
 
         {{
         "skills_scores": {{
-            "RAG": {{"exists": true/false, "score": 0-5}},
-            "Automation": {{"exists": true/false, "score": 0-5}},
-            "NLP": {{"exists": true/false, "score": 0-5}},
-            "Web Scraping": {{"exists": true/false, "score": 0-5}}
+            {skills_json}
         }},
         "total_score": sum of all scores,
-        "result": "PASS" if total_score >= {len(skills)*2} else "FAIL"
+        "result": "PASS" if total_score >= ({len(SKILLS)*5//2}) else "FAIL"
         }}
 
         - If a skill does not exist in the CV, set "exists": false and "score": 0.
